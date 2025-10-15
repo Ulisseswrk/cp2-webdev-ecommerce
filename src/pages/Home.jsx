@@ -33,10 +33,9 @@ export default function Home() {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">Bem-vindo ao Fiap Commerce!</h2>
       {secoes.map((secao) => (
         <div key={secao.nome} className="mb-8">
-          <div className="bg-black rounded px-4 py-2 mb-2">
+          <div className="bg-black px-4 py-2 mb-2 flex justify-center w-[100%]">
             <div className="text-xl font-bold text-yellow-300">{secao.nome}</div>
             <div className="text-sm">Produtos em destaque</div>
           </div>
